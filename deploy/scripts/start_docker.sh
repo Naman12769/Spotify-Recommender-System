@@ -20,6 +20,6 @@ if [ "$(docker ps -aq -f name=hybrid_recsys)" ]; then
 fi
 
 echo "Starting new container..."
-docker run -d -p 80:8000 --name hybrid_recsys 339713187643.dkr.ecr.us-east-1.amazonaws.com/spotify_hybrid_recsys:latest
+docker run -d -p 8000:8000 --name hybrid_recsys 339713187643.dkr.ecr.us-east-1.amazonaws.com/spotify_hybrid_recsys:latest
 
 echo "Container started successfully."
